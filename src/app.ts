@@ -14,8 +14,8 @@ app.use('/api/v1', router);
 
 const test = (req: Request, res: Response) => {
   //   Promise.reject();
-  const a = 10;
-  res.send(a);
+  // const a = 10;
+  res.send({ success: true, message: 'Hello ExcellBD' });
 };
 app.use('/', test);
 app.use(globalErrorHandler);
